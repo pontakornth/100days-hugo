@@ -1,0 +1,5 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "100 Days Of Code"
+[taxonomies]
+  day = "day"

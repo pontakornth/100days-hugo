@@ -1,0 +1,20 @@
+{
+  "name": "100days-hugo",
+  "version": "1.0.0",
+  "description": "100 Blog but in Hugo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "windi:dev": "windicss './{content,layouts}/**/*.{md,html}' --config windi.config.js -to ./assets/windi.css --dev ",
+    "dev": "hugo server -D"
+  },
+  "keywords": [
+    "blog",
+    "100daysofcode"
+  ],
+  "author": "pontakornth",
+  "license": "MIT",
+  "dependencies": {
+    "windicss": "^3.0.9"
+  }
+}

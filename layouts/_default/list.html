@@ -1,0 +1,11 @@
+{{ define "main"}}
+<ul>
+{{ range .Pages.ByDate.Reverse}}
+<h1 class="text-4xl font-bold underline">
+    <a href="{{ .Permalink }}">
+    {{ .Title }}
+    </a>
+</h1>
+{{ end }}
+
+</ul>
