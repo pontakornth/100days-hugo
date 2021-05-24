@@ -5,4 +5,8 @@ draft: true
 day: 9
 ---
 
-<div class="font-bold text-blue-400"></div>
+This is the best.
+
+```python
+print("Test highlighting")
+```
