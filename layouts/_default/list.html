@@ -1,11 +1,24 @@
 {{ define "main"}}
-<ul>
-{{ range .Pages.ByDate.Reverse}}
-<h1 class="text-4xl font-bold underline">
-    <a href="{{ .Permalink }}">
-    {{ .Title }}
-    </a>
-</h1>
-{{ end }}
-</ul>
+<h1 class="text-center text-5xl font-bold">{{or .Title .Site.Title }}</h1>
+<table class="table table-fixed my-8 w-full">
+    <thead>
+        <tr>
+            <th class="w-1/2 p-4 text-right">
+                Date
+            </th>
+            <th class="w-1/2 p-4 text-left">
+                Link
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    {{ range .Pages.ByDate.Reverse}}
+        <tr>
+            <td class="text-right p-4">Day {{or .Params.Day 8}} - {{dateFormat "2006-01-02" .Date}}</td>
+            <td class="p-4">
+                <a class="text-blue-500 visited:text-blue-700 underline" href="{{ .Permalink }}">{{ .Title }}</a>
+            </td>
+        </tr>
+    {{ end }}
+    </tbody>
 {{ end }}

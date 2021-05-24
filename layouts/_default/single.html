@@ -1,4 +1,6 @@
 {{ define "main"}}
-<h1>{{.Title }}</h1>
-{{.Content}}
+<h1 class="text-center text-5xl font-bold">{{or .Title .Site.Title }}</h1>
+<div class="content my-8">
+    {{.Content}}
+</div>
 {{ end }}
