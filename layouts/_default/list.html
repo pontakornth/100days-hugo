@@ -1,5 +1,6 @@
 {{ define "main"}}
 <h1 class="text-center text-5xl font-bold">{{or .Title .Site.Title }}</h1>
+{{- partial "author" . -}}
 <table class="table table-fixed my-8 w-full">
     <thead>
         <tr>
