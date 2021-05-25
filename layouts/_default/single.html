@@ -1,6 +1,8 @@
 {{ define "main"}}
 <h1 class="text-center text-5xl font-bold">{{or .Title .Site.Title }}</h1>
 <div class="content my-8">
+    <p class="text-gray-500">Link: <a class="underline" target="_blank" href="{{.Params.Link}}">{{.Params.Link}}</a></p>
+    <p class="text-gray-500">Day: {{.Params.Day}}</p>
     {{.Content}}
 </div>
 {{ end }}
