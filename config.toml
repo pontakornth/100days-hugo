@@ -3,3 +3,5 @@ languageCode = "en-us"
 title = "100 Days Of Code"
 [taxonomies]
   day = "day"
+[params]
+  github = "pontakornth"
